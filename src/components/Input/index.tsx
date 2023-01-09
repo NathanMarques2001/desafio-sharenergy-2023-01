@@ -1,11 +1,17 @@
 import './styles.css'
 
-import { Component } from 'react'
-
-export class Input extends Component {
-  render() {
-    return <button>botao</button>
-  }
-}
-
-export default Input
+export const Input = (
+  type: string,
+  className: string,
+  placeholder: string,
+  require: false,
+  minLength?: number,
+) => (
+  <input
+    type={type}
+    className={className}
+    minLength={minLength}
+    placeholder={placeholder}
+    required={require}
+  />
+);
