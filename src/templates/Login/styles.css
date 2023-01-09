@@ -1,0 +1,15 @@
+.Container-Login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.Form-Login{
+    background: #FFF;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
