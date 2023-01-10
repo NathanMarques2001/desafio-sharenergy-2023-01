@@ -1,4 +1,5 @@
 import './styles.css'
+
 import { Component } from 'react'
 import Logo from './../../images/Logo.png'
 import CheckboxNoCheck from './../../images/No-Check-Box.png'

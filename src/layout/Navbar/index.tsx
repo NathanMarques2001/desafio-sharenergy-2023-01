@@ -10,9 +10,6 @@ export class Navbar extends Component {
           <div className="links">
             <ul>
               <li>
-                <Link to="/">Login</Link>
-              </li>
-              <li>
                 <Link to="/Random-Users">Random Users</Link>
               </li>
               <li>
@@ -23,6 +20,9 @@ export class Navbar extends Component {
               </li>
               <li>
                 <Link to="/Clients">Clientes</Link>
+              </li>
+              <li>
+                <Link to="/">Sair</Link>
               </li>
             </ul>
           </div>

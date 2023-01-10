@@ -57,7 +57,7 @@
 .Submit-Button-Login {
     padding: 3%;
     width: 85%;
-    margin-bottom: 10%;
+    margin-bottom: 40px;
     font-size: 20px;
     font-weight: bold;
     color: #FFF;
@@ -69,10 +69,6 @@
 .Submit-Button-Login:hover {
     background: #0E7473;
     cursor: pointer;
-}
-
-.navbar {
-    display: none;
 }
 
 .Invalid-Login {

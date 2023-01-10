@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import Navbar from '../layout/Navbar'
 import Login from '../templates/Login'
 import RandomUsers from '../templates/Random-Users'
 import HTTPCats from '../templates/HTPP-Cat'
@@ -11,7 +10,6 @@ export function PageRoutes() {
   return (
     <>
       <Router>
-        <Navbar />
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/Random-users" element={<RandomUsers />} />
