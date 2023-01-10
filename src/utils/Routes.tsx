@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import Navbar from '../../layout/Navbar'
-import Login from '../../templates/Login'
-import RandomUsers from '../../templates/Random-Users'
-import HTTPCats from '../../templates/HTPP-Cat'
-import RandomDogs from '../../templates/Random-Dog'
-import Clients from '../../templates/Clients'
+import Navbar from '../layout/Navbar'
+import Login from '../templates/Login'
+import RandomUsers from '../templates/Random-Users'
+import HTTPCats from '../templates/HTPP-Cat'
+import RandomDogs from '../templates/Random-Dog'
+import Clients from '../templates/Clients'
 
 export function PageRoutes() {
   return (

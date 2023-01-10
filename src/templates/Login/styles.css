@@ -1,15 +1,80 @@
-.Container-Login{
+.Container-Login {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
-.Form-Login{
+.Form-Login {
     background: #FFF;
     width: 65%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
+    box-shadow: 2px 2px 6px;
+}
+
+.Logo-login {
+    width: 75%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.Input-Login {
+    width: 85%;
+    font-size: 14px;
+    padding: 16px 0px 16px 20px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px;
+    border-color: #A8A8A8;
+    border-style: solid;
+}
+
+.Checkbox-Login {
+    text-align: start;
+    width: 85%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    color: #A8A8A8;
+}
+
+.Check {
+    position: absolute;
+}
+
+.Checkbox {
+    margin-right: 8px;
+}
+
+.Checkbox:hover,
+.Check:hover {
+    cursor: pointer;
+}
+
+.Submit-Button-Login {
+    padding: 12px 0px 12px 0px;
+    width: 85%;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    background: #1BA2A1;
+    border: none;
+    border-radius: 8px;
+}
+
+.Submit-Button-Login:hover {
+    background: #0E7473;
+    cursor: pointer;
+}
+
+.navbar {
+    display: none;
+}
+
+.Invalid-Login {
+    color: red;
 }
