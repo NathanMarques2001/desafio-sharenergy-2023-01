@@ -1,11 +1,11 @@
 import './styles.css'
 
-import { Component } from 'react'
+import { LoadCatImage } from '../../utils/Load-Cat-Images'
 
-export class CatImage extends Component {
-  render() {
-    return <button>botao</button>
-  }
+export function CatImage({ httpCode }: any) {
+  return (
+    <img src={LoadCatImage(httpCode)} alt="Img gatinho" className="Cat-Image" />
+  )
 }
 
 export default CatImage
