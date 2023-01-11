@@ -10,7 +10,15 @@ export class RandomDogs extends Component {
     return (
       <>
         <Navbar />
-        <DogImage/>
+        <div className="Container-RandomDogs">
+          <main className="Content-RandomDogs">
+            <p className="RandomDogs-Text">
+            Clique no botão abaixo para gerar uma foto ou GIF aleatório de um cachorrinho.
+            </p>
+            <button className='Button-RandomDogs'>Gerar cachorro</button>
+            <img src="" alt="foto" />
+          </main>
+        </div>
       </>
     )
   }
