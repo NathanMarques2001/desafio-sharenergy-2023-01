@@ -1,7 +1,8 @@
-.Container-HTTP-Cats{
+.Container-HTTP-Cats {
     display: flex;
     justify-content: center;
 }
+
 .Content-HTTPCats {
     display: flex;
     flex-direction: column;
@@ -18,7 +19,7 @@
     text-align: center;
 }
 
-.HTTPCats-Input{
+.HTTPCats-Input {
     width: 100%;
     margin-top: 5%;
     font-size: 16px;
@@ -27,4 +28,26 @@
     border: 1px;
     border-color: #A8A8A8;
     border-style: solid;
+}
+
+.Cat-Image {
+    margin-top: 7.5%;
+    padding-bottom: 5%;
+    width: auto;
+    height: 500px;
+    max-width: 450px;
+}
+
+@media(max-width: 480px) {
+    .Cat-Image {
+        height: 300px;
+    }
+
+    .HTTPCats-Input {
+        padding: 4%;
+    }
+
+    .HTTPCats-Text {
+        font-size: 16px;
+    }
 }

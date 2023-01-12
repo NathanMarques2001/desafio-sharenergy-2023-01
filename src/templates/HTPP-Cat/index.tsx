@@ -2,17 +2,17 @@ import './styles.css'
 
 import Navbar from '../../layout/Navbar'
 import { Component } from 'react'
-import CatImage from '../../components/Cat-Image'
-import { NotFoundCat } from '../../utils/Load-Cat-Images'
-import NotFoundImg from '../../images/NotFoundCat.png';
+import { NotFoundCat } from '../../utils/Not-Found-Cat'
+import NotFoundImg from '../../images/NotFoundCat.png'
 
 export class HTTPCats extends Component {
   state = {
+    photoUrl: 'https://http.cat/',
     catCode: 0,
   }
 
   render() {
-    const { catCode } = this.state
+    const { catCode, photoUrl } = this.state
     return (
       <>
         <Navbar />
@@ -29,9 +29,13 @@ export class HTTPCats extends Component {
               onChange={(e) => this.setState({ catCode: e.target.value })}
             />
             {NotFoundCat(catCode) ? (
-              <img src={NotFoundImg} alt="a" className='Cat-Image'/>
+              <img src={NotFoundImg} alt="a" className="Cat-Image" />
             ) : (
-              <CatImage httpCode={catCode} />
+              <img
+                src={`${photoUrl}${catCode}`}
+                alt="Img gatinho"
+                className="Cat-Image"
+              />
             )}
           </main>
         </div>
