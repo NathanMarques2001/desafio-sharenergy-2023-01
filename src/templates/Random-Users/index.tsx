@@ -37,14 +37,16 @@ export class RandomUsers extends Component {
     return (
       <>
         <Navbar />
-        <input type="text" placeholder="Insira o nome ou usuário" />
-        <UserCard
-          photo={photo}
-          username={username}
-          name={name}
-          age={age}
-          email={email}
-        />
+        <div className="RandomUser-Content">
+          <input type="text" placeholder="Insira o nome ou usuário" className='Input-RandomUser'/>
+          <UserCard
+            photo={photo}
+            username={username}
+            name={name}
+            age={age}
+            email={email}
+          />
+        </div>
       </>
     )
   }
