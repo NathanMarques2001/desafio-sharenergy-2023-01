@@ -9,7 +9,7 @@ export class RandomDogs extends Component {
     count: 0,
   }
 
-  componentDidMount() {
+  componentDidMount(): void {
     this.dogPhoto()
   }
 
