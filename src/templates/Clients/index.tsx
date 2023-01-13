@@ -13,8 +13,8 @@ export class Clients extends Component {
         <div>
           <main className="CRUD-Main-Content">
             <p className='CRUD-Text'>
-              Para editar ou excluir dados de um cliente basta clicar na lupa de
-              visualizar.
+              Para editar ou excluir dados de um cliente basta clicar no botão de
+              abrir.
             </p>
             <ClientsTable
               name={`Nathan Marques`}
@@ -23,7 +23,7 @@ export class Clients extends Component {
               adress={`Rua alguma coisa, 3182`}
               email={`Nathanmarques423@gmail.com`}
             />
-            <button>Adicionar cliente</button>
+            <button className='CRUD-Button'>Adicionar cliente</button>
           </main>
         </div>
       </>

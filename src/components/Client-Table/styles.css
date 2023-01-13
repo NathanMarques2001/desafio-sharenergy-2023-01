@@ -13,6 +13,7 @@
 .CRUD-Table td,
 .CRUD-Table th {
     padding: 10px 8px 10px 8px;
+    text-align: center;
 }
 
 .CRUD-Table tr {
@@ -30,7 +31,7 @@
     text-align: center;
 }
 
-.Open-button-CRUD{
+.Open-button-CRUD {
     padding: 5% 7.5% 5% 7.5%;
     width: 100%;
     border: none;
@@ -41,4 +42,53 @@
 
 .Open-button-CRUD:hover {
     cursor: pointer;
+    background-color: #0a4d4c;
+}
+
+@media(max-width: 835px) {
+
+    .CRUD-Table th,
+    .Open-button-CRUD {
+        font-size: 14px;
+    }
+
+    .CRUD-Table td {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 610px) {
+
+    .CRUD-Table th,
+    .Open-button-CRUD {
+        font-size: 12px;
+    }
+
+    .CRUD-Table td {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 530px) {
+
+    .CRUD-Table th,
+    .Open-button-CRUD {
+        font-size: 10px;
+    }
+
+    .CRUD-Table td {
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 445px) {
+
+    .CRUD-Table th,
+    .Open-button-CRUD {
+        font-size: 8px;
+    }
+
+    .CRUD-Table td {
+        font-size: 6px;
+    }
 }
