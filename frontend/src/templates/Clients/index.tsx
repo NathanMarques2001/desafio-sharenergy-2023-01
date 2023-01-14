@@ -12,10 +12,11 @@ export class Clients extends Component {
         <Navbar />
         <div>
           <main className="CRUD-Main-Content">
-            <p className='CRUD-Text'>
-              Para editar ou excluir dados de um cliente basta clicar no botão de
-              abrir.
+            <p className="CRUD-Text">
+              Para editar ou excluir dados de um cliente basta clicar no botão
+              de abrir.
             </p>
+
             <ClientsTable
               name={`Nathan Marques`}
               cpf={`123.456.789-65`}
@@ -23,7 +24,8 @@ export class Clients extends Component {
               adress={`Rua alguma coisa, 3182`}
               email={`Nathanmarques423@gmail.com`}
             />
-            <button className='CRUD-Button'>Adicionar cliente</button>
+
+            <button className="CRUD-Button">Adicionar cliente</button>
           </main>
         </div>
       </>

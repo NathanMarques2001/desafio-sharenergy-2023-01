@@ -7,12 +7,13 @@ import NotFoundImg from '../../images/NotFoundCat.png'
 
 export class HTTPCats extends Component {
   state = {
-    photoUrl: 'https://http.cat/',
     catCode: 0,
   }
 
   render() {
-    const { catCode, photoUrl } = this.state
+    const photoUrl = 'https://http.cat/'
+    const { catCode } = this.state
+
     return (
       <>
         <Navbar />
@@ -22,12 +23,14 @@ export class HTTPCats extends Component {
               Digite um código HTTP para saber a resposta, e junto com ela, ver
               a foto de um gatinho referente a mesma.
             </p>
+
             <input
               type="text"
               className="HTTPCats-Input"
               placeholder="Insira o código HTTP aqui..."
               onChange={(e) => this.setState({ catCode: e.target.value })}
             />
+
             {NotFoundCat(catCode) ? (
               <img src={NotFoundImg} alt="a" className="Cat-Image" />
             ) : (

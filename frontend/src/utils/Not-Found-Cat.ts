@@ -1,4 +1,4 @@
-export function NotFoundCat(httpCode: number): boolean {
+export function NotFoundCat(httpCode: number | string): boolean {
     if ((httpCode < 100) ||
         (httpCode > 103 && httpCode < 200) ||
         (httpCode === 205) ||

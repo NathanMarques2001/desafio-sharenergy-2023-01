@@ -19,6 +19,7 @@ export class Login extends Component {
     return (
       <div className="Container-Login">
         <form action="./../Random-Users" className="Form-Login">
+          
           <img src={Logo} alt="Logo" className="Logo-login" />
 
           <input
@@ -59,7 +60,7 @@ export class Login extends Component {
             />
             Lembrar de mim
           </p>
-          
+
           <input
             type="submit"
             className="Submit-Button-Login"

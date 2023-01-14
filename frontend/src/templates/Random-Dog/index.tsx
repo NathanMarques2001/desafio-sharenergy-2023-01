@@ -1,45 +1,42 @@
 import './styles.css'
 
 import Navbar from '../../layout/Navbar'
-import { Component } from 'react'
+import { useState, useEffect } from 'react'
 
-export class RandomDogs extends Component {
-  state = {
-    srcUrl: '',
-    count: 0,
-  }
+export const RandomDogs = () => {
+  const [srcUrl, setSrcUrl] = useState<string>('')
+  const [count, setCount] = useState<number>(0)
 
-  componentDidMount(): void {
-    this.dogPhoto()
-  }
+  useEffect(() => {
+    const getDogPhoto = async () => {
+      const response = await fetch('https://random.dog/woof.json')
+      const data = await response.json()
 
-  dogPhoto = async () => {
-    fetch('https://random.dog/woof.json')
-      .then((response) => response.json())
-      .then((photo) => this.setState({ srcUrl: photo.url }))
-      .catch((err) => console.error(err))
-  }
+      setSrcUrl(data.url)
+    }
+    getDogPhoto()
+  }, [count])
 
-  render() {
-    const { srcUrl } = this.state
-    return (
-      <>
-        <Navbar />
-        <div className="Container-RandomDogs">
-          <main className="Content-RandomDogs">
-            <p className="RandomDogs-Text">
-              Clique no botão abaixo para gerar uma foto ou GIF aleatório de um
-              cachorrinho.
-            </p>
-            <button className="Button-RandomDogs" onClick={this.dogPhoto}>
-              Gerar cachorro
-            </button>
-            <img src={srcUrl} alt="" className="Dog-Image" />
-          </main>
-        </div>
-      </>
-    )
-  }
+  return (
+    <>
+      <Navbar />
+      <div className="Container-RandomDogs">
+        <main className="Content-RandomDogs">
+          <p className="RandomDogs-Text">
+            Clique no botão abaixo para gerar uma foto ou GIF aleatório de um
+            cachorrinho.
+          </p>
+          <button
+            className="Button-RandomDogs"
+            onClick={(e) => setCount(count + 1)}
+          >
+            Gerar cachorro
+          </button>
+          <img src={srcUrl} alt="" className="Dog-Image" />
+        </main>
+      </div>
+    </>
+  )
 }
 
 export default RandomDogs

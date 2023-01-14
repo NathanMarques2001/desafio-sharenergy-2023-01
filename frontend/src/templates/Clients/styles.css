@@ -1,9 +1,9 @@
-.CRUD-Main-Content{
+.CRUD-Main-Content {
     height: 100vh;
     margin-top: 5%;
 }
 
-.CRUD-Text{
+.CRUD-Text {
     width: 70%;
     color: #FFF;
     font-size: 18px;
@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-.CRUD-Button{
+.CRUD-Button {
     padding: 1.5%;
     width: 50%;
     margin-top: 5%;
@@ -24,17 +24,17 @@
     border-radius: 8px;
 }
 
-.CRUD-Button:hover{
+.CRUD-Button:hover {
     cursor: pointer;
     background-color: #A9B01A;
 }
 
-@media(min-width: 600px){
-    .CRUD-Text{
+@media(min-width: 600px) {
+    .CRUD-Text {
         font-size: 16px;
     }
 
-    .CRUD-Button{
+    .CRUD-Button {
         font-size: 16px;
     }
 }

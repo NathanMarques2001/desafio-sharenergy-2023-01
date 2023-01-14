@@ -1,0 +1,6 @@
+.Container-Cards {
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
