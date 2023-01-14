@@ -3,7 +3,7 @@ import './styles.css'
 export function UserCard({ photo, username, name, age, email }: any) {
   return (
     <div className="Card">
-      <img src={photo} alt="" className="Card-Photo" />
+      <img src={photo} alt="user" className="Card-Photo" />
       <p className="Card-Username">{username}</p>
       <div className="Card-Container-Data">
         <p className="Card-Text" id="Card-Name">

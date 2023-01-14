@@ -26,6 +26,7 @@ export class Login extends Component {
             className="Input-Login"
             id="Input-User"
             placeholder="Nome de usuário"
+            autoComplete="nickname"
             onChange={(e) => (user = e.target.value)}
           />
 
@@ -34,6 +35,7 @@ export class Login extends Component {
             className="Input-Login"
             id="Input-Password"
             placeholder="Senha"
+            autoComplete="off"
             onChange={(e) => (password = e.target.value)}
           />
 
@@ -57,6 +59,7 @@ export class Login extends Component {
             />
             Lembrar de mim
           </p>
+          
           <input
             type="submit"
             className="Submit-Button-Login"

@@ -13,6 +13,7 @@ export interface RandomUser {
 
   login: {
     username: string
+    uuid: string
   }
 
   dob: {
@@ -92,6 +93,7 @@ export const RandomUsers = () => {
         <div className="Container-Cards">
           {filterUser.map((users) => (
             <UserCard
+              key={users.login.uuid}
               photo={users.picture.large}
               username={users.login.username}
               name={`${users.name.first} ${users.name.last}`}
