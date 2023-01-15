@@ -1,6 +1,22 @@
 import './styles.css'
 
-export const ClientsTable = ({ name, cpf, phone, adress, email }: any) => {
+import { ClientsData } from '../Clients-Data'
+import api from '../../services/api'
+import { useEffect, useState } from 'react'
+import { Client } from '../../utils/Interfaces'
+
+export const ClientsTable = () => {
+  const [allClients, setAllClients] = useState<Client[]>([])
+
+  useEffect(() => {
+    async function getAllClients() {
+      const response = await api.get('/clients')
+
+      setAllClients(response.data)
+    }
+
+    getAllClients()
+  }, [allClients])
   return (
     <table className="CRUD-Table">
       <thead>
@@ -15,16 +31,18 @@ export const ClientsTable = ({ name, cpf, phone, adress, email }: any) => {
       </thead>
 
       <tbody>
-        <tr>
-          <td>{name}</td>
-          <td>{cpf}</td>
-          <td>{phone}</td>
-          <td>{adress}</td>
-          <td>{email}</td>
-          <td>
-            <button className="Open-button-CRUD">Abrir</button>
-          </td>
-        </tr>
+        {allClients.map((client) => (
+          <ClientsData
+            key={client._id}
+            name={client.name}
+            cpf={client.cpf}
+            phone={client.phone}
+            address={client.address}
+            city={client.city}
+            email={client.email}
+            id={client._id}
+          />
+        ))}
       </tbody>
     </table>
   )

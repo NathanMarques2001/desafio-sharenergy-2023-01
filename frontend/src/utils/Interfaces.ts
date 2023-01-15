@@ -19,3 +19,13 @@ export interface RandomUser {
         large: string
     }
 }
+
+export interface Client {
+    name: string
+    cpf: string
+    email: string
+    phone: number
+    address: string
+    city: string
+    _id: Object
+}

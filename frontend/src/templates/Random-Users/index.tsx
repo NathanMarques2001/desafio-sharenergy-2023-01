@@ -1,6 +1,6 @@
 import './styles.css'
 
-import Navbar from '../../layout/Navbar'
+import Navbar from '../../components/Navbar'
 import { useState } from 'react'
 import { Cards } from '../../components/Cards'
 import NavButtons from '../../components/Nav-Buttons'

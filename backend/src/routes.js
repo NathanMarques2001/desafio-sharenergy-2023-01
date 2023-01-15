@@ -6,6 +6,6 @@ const ClientController = require('./controllers/ClientController');
 routes.post('/clients', ClientController.create);
 routes.get('/clients', ClientController.read);
 routes.delete('/clients/:id', ClientController.delete);
-routes.post('/clients-data/:id', ClientController.update);
+routes.post('/clientsdata/:id', ClientController.update);
 
 module.exports = routes;

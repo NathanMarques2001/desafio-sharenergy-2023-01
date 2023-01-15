@@ -1,6 +1,6 @@
 import './styles.css'
 
-import Navbar from '../../layout/Navbar'
+import Navbar from '../../components/Navbar'
 import { Component } from 'react'
 import { NotFoundCat } from '../../utils/Not-Found-Cat'
 import NotFoundImg from '../../images/NotFoundCat.png'

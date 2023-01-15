@@ -31,18 +31,30 @@
     text-align: center;
 }
 
-.Open-button-CRUD {
+.button-CRUD {
     padding: 5% 7.5% 5% 7.5%;
     width: 100%;
     border: none;
-    background-color: #0E7473;
-    color: #FFF;
     font-weight: bold;
 }
 
-.Open-button-CRUD:hover {
+#Edit-button-CRUD:hover {
     cursor: pointer;
     background-color: #0a4d4c;
+}
+
+#Edit-button-CRUD{
+    background-color: #0E7473;
+    color: #FFF;
+}
+
+#Delete-button-CRUD{
+    background-color: red;
+}
+
+#Delete-button-CRUD:hover{
+    cursor: pointer;
+    background-color: #B22512;
 }
 
 @media(max-width: 835px) {

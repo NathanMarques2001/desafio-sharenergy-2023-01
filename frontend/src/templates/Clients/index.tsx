@@ -1,36 +1,30 @@
 import './styles.css'
 
-import Navbar from '../../layout/Navbar'
-
-import { Component } from 'react'
+import Navbar from '../../components/Navbar'
 import ClientsTable from '../../components/Client-Table'
+import { Link } from 'react-router-dom'
 
-export class Clients extends Component {
-  render() {
-    return (
-      <>
-        <Navbar />
-        <div>
-          <main className="CRUD-Main-Content">
-            <p className="CRUD-Text">
-              Para editar ou excluir dados de um cliente basta clicar no botão
-              de abrir.
-            </p>
+export const Clients = () => {
 
-            <ClientsTable
-              name={`Nathan Marques`}
-              cpf={`123.456.789-65`}
-              phone={`(31) 99432-8933`}
-              adress={`Rua alguma coisa, 3182`}
-              email={`Nathanmarques423@gmail.com`}
-            />
+  return (
+    <>
+      <Navbar />
+      <div>
+        <main className="CRUD-Main-Content">
+          <p className="CRUD-Text">
+            Para editar ou excluir dados de um cliente basta clicar no botão de
+            abrir.
+          </p>
 
+          <ClientsTable />
+
+          <Link to="/Register-Client">
             <button className="CRUD-Button">Adicionar cliente</button>
-          </main>
-        </div>
-      </>
-    )
-  }
+          </Link>
+        </main>
+      </div>
+    </>
+  )
 }
 
 export default Clients

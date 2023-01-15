@@ -1,6 +1,6 @@
 import './styles.css'
 
-import Navbar from '../../layout/Navbar'
+import Navbar from '../../components/Navbar'
 import { useState, useEffect } from 'react'
 
 export const RandomDogs = () => {
