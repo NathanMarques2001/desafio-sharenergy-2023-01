@@ -1,6 +1,7 @@
 # Desafio para o processo seletivo SHARENERGY 2023/01
 
-![preview](./frontend/src/images/Logo.png)  
+![preview](./frontend/src/images/Logo.png) 
+ 
 <br />
 
 >[🔗 Link do vídeo apresentando o restultado do desafio](linkvideo) 
