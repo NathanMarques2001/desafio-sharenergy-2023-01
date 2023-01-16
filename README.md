@@ -6,7 +6,8 @@
 >[🔗 Link do vídeo apresentando o restultado do desafio](linkvideo) 
 
 <br />
-> ## ⚙️ Como instalar o projeto
+
+>## ⚙️ Como instalar o projeto
 
 ### Front-end
 - No terminal digite ``` cd frontend/ ```
@@ -17,7 +18,8 @@
 - Depois ``` npm install ```  
 
 <br />
-> ## 👨🏽‍💻 Como rodar o projeto
+
+>## 👨🏽‍💻 Como rodar o projeto
 
 ### Front-end
 - No terminal digite ``` cd frontend/ ```
