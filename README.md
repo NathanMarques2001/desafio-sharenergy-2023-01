@@ -2,7 +2,9 @@
 
 ![preview](./frontend/src/images/Logo.png)
 
-[🔗 Link do vídeo apresentando o restultado do desafio](linkvideo)
+
+>[🔗 Link do vídeo apresentando o restultado do desafio](linkvideo)
+
 
 >## ⚙️ Como instalar o projeto
 
@@ -13,6 +15,7 @@
 ### Back-end
 - No terminal digite ``` cd backend/src ```
 - Depois ``` npm install ```
+
 
 >## 👨🏽‍💻 Como rodar o projeto
 
