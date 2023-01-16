@@ -34,15 +34,11 @@
 >## 🛠 Tecnologias
 
 <img src="https://img.shields.io/static/v1?label=&message=TypeScript&color=blue&style=for-the-badge" alt="ts" />
-- HTML
-- CSS
-- TypeScript
-- ReactJS
-- NodeJS
-- Express
-- Insomnia
-- Figma
-- GIT e Github
+<img src="https://img.shields.io/static/v1?label=&message=ReactJS&color=lightblue&style=for-the-badge" alt="react" />
+<img src="https://img.shields.io/static/v1?label=&message=NodeJS&color=green&style=for-the-badge" alt="node" />
+<img src="https://img.shields.io/static/v1?label=HTML&message=CSS&color=gray&style=for-the-badge" alt="html-css" />
+<img src="https://img.shields.io/static/v1?label=&message=Insomnia&color=purple&style=for-the-badge" alt="insomnia" />
+<img src="https://img.shields.io/static/v1?label=&message=MongoDB&color=green&style=for-the-badge" alt="mongodb" />
 
 <br />
 
