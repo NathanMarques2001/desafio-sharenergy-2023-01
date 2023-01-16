@@ -32,6 +32,8 @@
 <br />
 
 >## 🛠 Tecnologias
+
+<img src="https://img.shields.io/static/v1?label=&message=TypeScript&color=blue&style=for-the-badge" alt="ts" />
 - HTML
 - CSS
 - TypeScript
