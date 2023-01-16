@@ -1,6 +1,7 @@
 # Desafio para o processo seletivo SHARENERGY 2023/01
 
 ![preview](./frontend/src/images/Logo.png)  
+<br />
 
 >[🔗 Link do vídeo apresentando o restultado do desafio](linkvideo) 
 
@@ -15,7 +16,7 @@
 - No terminal digite ``` cd backend/src ```
 - Depois ``` npm install ```  
 
-
+<br />
 >## 👨🏽‍💻 Como rodar o projeto
 
 ### Front-end
@@ -26,7 +27,7 @@
 - No terminal digite ``` cd backend/src ```
 - Depois ``` node index.js ```  
 
-
+<br />
 Repositório destinado aos interessados em participar do processo seletivo da SHARENERGY 2023/01. As vagas são voltadas para desenvolvimento de aplicações Web e Mobile.
 
 ## Sobre a SHARENERGY
