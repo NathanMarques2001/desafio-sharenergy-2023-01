@@ -2,9 +2,9 @@
 
 ![preview](./frontend/src/images/Logo.png)  
 
->[🔗 Link do vídeo apresentando o restultado do desafio](linkvideo)  
+>[🔗 Link do vídeo apresentando o restultado do desafio](linkvideo) 
 
-
+<br />
 >## ⚙️ Como instalar o projeto
 
 ### Front-end
