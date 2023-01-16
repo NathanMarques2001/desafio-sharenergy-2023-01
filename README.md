@@ -4,6 +4,7 @@
 
 >[🔗 Link do vídeo apresentando o restultado do desafio](linkvideo)  
 
+
 >## ⚙️ Como instalar o projeto
 
 ### Front-end
@@ -14,6 +15,7 @@
 - No terminal digite ``` cd backend/src ```
 - Depois ``` npm install ```  
 
+
 >## 👨🏽‍💻 Como rodar o projeto
 
 ### Front-end
@@ -23,6 +25,7 @@
 ### Back-end
 - No terminal digite ``` cd backend/src ```
 - Depois ``` node index.js ```  
+
 
 Repositório destinado aos interessados em participar do processo seletivo da SHARENERGY 2023/01. As vagas são voltadas para desenvolvimento de aplicações Web e Mobile.
 
