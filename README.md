@@ -4,7 +4,7 @@
  
 <br />
 
->[🔗 Link do vídeo apresentando o restultado do desafio](linkvideo) 
+>[🔗 Link do vídeo apresentando o restultado do desafio](https://youtu.be/jU4cm6gXUjk) 
 
 <br />
 
