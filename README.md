@@ -33,6 +33,7 @@
 
 >## 🛠 Tecnologias
 
+<img src="https://img.shields.io/static/v1?label=&message=Figma&color=red&style=for-the-badge" alt="html-css" />
 <img src="https://img.shields.io/static/v1?label=HTML&message=CSS&color=gray&style=for-the-badge" alt="html-css" />
 <img src="https://img.shields.io/static/v1?label=&message=TypeScript&color=blue&style=for-the-badge" alt="ts" />
 <img src="https://img.shields.io/static/v1?label=&message=ReactJS&color=lightblue&style=for-the-badge" alt="react" />
