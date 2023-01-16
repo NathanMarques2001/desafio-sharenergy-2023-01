@@ -1,5 +1,7 @@
 import './styles.css'
 
+import MaskedInput from 'react-text-mask'
+
 export const ClientModal = ({
   nameValue,
   onChangeName,
@@ -39,9 +41,9 @@ export const ClientModal = ({
               Telefone
             </label>
             <input
-              type="text"
+              type="number"
               className="Input-modal"
-              placeholder="Ex: (31) 91234-5678"
+              placeholder="Insira somente números"
               value={phoneValue}
               onChange={onChangePhone}
               required={required}
@@ -55,7 +57,7 @@ export const ClientModal = ({
               E-mail
             </label>
             <input
-              type="text"
+              type="email"
               className="Input-modal"
               placeholder="Exemplo@email.com"
               value={emailValue}
@@ -68,10 +70,13 @@ export const ClientModal = ({
             <label htmlFor="" className="Input-modal-text">
               CPF
             </label>
-            <input
+            <MaskedInput
               type="text"
               className="Input-modal"
-              placeholder="000.000.000-00"
+              mask={[
+                /\d/,/\d/,/\d/,'.',/\d/,/\d/,/\d/,'.',/\d/,/\d/,/\d/,'-',/\d/,/\d/
+              ]}
+              placeholder="Insira somente números"
               value={cpfValue}
               onChange={onChangeCpf}
               required={required}

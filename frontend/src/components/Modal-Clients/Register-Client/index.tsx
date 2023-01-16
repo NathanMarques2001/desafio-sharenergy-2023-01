@@ -12,7 +12,7 @@ export const RegisterClient = () => {
 
   async function handleSubmit(e: any) {
     if (
-      name !== '' ||
+      name === '' ||
       phone === 0 ||
       email === '' ||
       cpf === '' ||
@@ -20,7 +20,9 @@ export const RegisterClient = () => {
       city === ''
     ) {
       e.preventDefault()
+      alert('Parece que está faltando algum dado!')
     }
+
     const response = await api.post('/clients', {
       name,
       phone,
@@ -29,12 +31,6 @@ export const RegisterClient = () => {
       address,
       city,
     })
-    setName('')
-    setPhone(0)
-    setEmail('')
-    setCpf('')
-    setAddress('')
-    setCity('')
 
     if (response.status === 400) {
       console.error('error', 400)

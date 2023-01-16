@@ -32,6 +32,7 @@ export const EditClient = ({
   return (
     <>
       <ClientModal
+      setPhoneValue={setPhoneEdit}
         nameValue={nameEdit}
         onChangeName={(e: React.ChangeEvent<HTMLInputElement>) =>
           setNameEdit(e.target.value)
