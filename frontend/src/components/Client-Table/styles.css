@@ -6,9 +6,13 @@
 
 .CRUD-Table {
     border-collapse: collapse;
-    width: 98%;
     border: 1px solid black;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 70vh;
+    display: block;
 }
+
 
 .CRUD-Table td,
 .CRUD-Table th {
@@ -29,32 +33,6 @@
     color: black;
     border-bottom: 1px solid black;
     text-align: center;
-}
-
-.button-CRUD {
-    padding: 5% 7.5% 5% 7.5%;
-    width: 100%;
-    border: none;
-    font-weight: bold;
-}
-
-#Edit-button-CRUD:hover {
-    cursor: pointer;
-    background-color: #0a4d4c;
-}
-
-#Edit-button-CRUD{
-    background-color: #0E7473;
-    color: #FFF;
-}
-
-#Delete-button-CRUD{
-    background-color: red;
-}
-
-#Delete-button-CRUD:hover{
-    cursor: pointer;
-    background-color: #B22512;
 }
 
 @media(max-width: 835px) {

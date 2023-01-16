@@ -26,7 +26,6 @@ export const RandomUsers = () => {
         <Cards lowerValue={lowerValue} page={currentPage} />
 
         <NavButtons setCurrentPage={setCurrentPage} currentPage={currentPage} />
-        
       </div>
     </>
   )

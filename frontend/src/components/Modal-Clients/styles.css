@@ -1,24 +1,29 @@
 .Modal {
-    position: fixed;
+    position: absolute;
     background-color: rgba(128, 128, 128, 0.6);
     width: 100%;
-    height: 100%;
+    height: 130%;
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 0;
+    left: 0;
 }
 
 .Modal-body {
     background: #FFF;
-    width: 90%;
-    height: 65%;
+    width: 95%;
+    height: fit-content;
     border-radius: 6px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .Modal-group-block {
     display: flex;
+    text-align: start;
+    margin: 1.5%;
 }
 
 .Input-block {
@@ -26,18 +31,22 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    padding: 1.5%;
+    align-items: center;
 }
 
 .Input-modal-text {
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+    width: 85%;
 }
 
 .Input-modal {
-    padding: 2%;
+    padding: 3%;
     font-size: 16px;
+    width: 90%;
+    border: 1px #A8A8A8 solid;
+    border-radius: 6px;
 }
 
 .Modal-buttons-div {
@@ -59,7 +68,7 @@
     margin-right: 2.5%;
 }
 
-#Edit-button:hover{
+#Edit-button:hover {
     cursor: pointer;
     background-color: #379328;
 }
@@ -68,7 +77,13 @@
     background-color: red;
 }
 
-#Close-button:hover{
+#Close-button:hover {
     cursor: pointer;
     background-color: #B22512;
+}
+
+@media(max-width: 600px) {
+    .Modal-group-block {
+        flex-direction: column;
+    }
 }

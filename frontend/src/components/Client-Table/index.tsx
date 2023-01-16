@@ -11,12 +11,11 @@ export const ClientsTable = () => {
   useEffect(() => {
     async function getAllClients() {
       const response = await api.get('/clients')
-
       setAllClients(response.data)
     }
-
     getAllClients()
   }, [allClients])
+
   return (
     <table className="CRUD-Table">
       <thead>
@@ -30,7 +29,7 @@ export const ClientsTable = () => {
         </tr>
       </thead>
 
-      <tbody>
+      <tbody className="CRUD-Table-Body">
         {allClients.map((client) => (
           <ClientsData
             key={client._id}

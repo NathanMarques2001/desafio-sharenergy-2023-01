@@ -41,16 +41,11 @@
     color: #A8A8A8;
 }
 
-.Check {
-    position: absolute;
-}
-
-.Checkbox {
+#checkbox {
     margin-right: 8px;
 }
 
-.Checkbox:hover,
-.Check:hover {
+.Checkbox-Login :hover {
     cursor: pointer;
 }
 

@@ -2,42 +2,77 @@ import './styles.css'
 
 import { Component } from 'react'
 import Logo from './../../images/Logo.png'
-import CheckboxNoCheck from './../../images/No-Check-Box.png'
-import CheckboxCheck from './../../images/Check-box.png'
 import { Authenticate } from '../../utils/Authenticate'
 
 export class Login extends Component {
-  render() {
-    let user: string
-    let password: string
+  state = {
+    email: '',
+    password: '',
+    isChecked: false,
+  }
 
-    function check(): void {
-      const check = document.querySelector('.Check')
-      check?.toggleAttribute('hidden')
+  componentDidMount(): void {
+    if (localStorage.checkbox && localStorage.email !== '') {
+      this.setState({
+        isChecked: true,
+        email: localStorage.username,
+        password: localStorage.password,
+      })
+    }
+  }
+
+  onChangeValue = (event: any) => {
+    this.setState({
+      [event.target.name]: event.target.value,
+    })
+  }
+
+  onChangeCheckbox = (event: any) => {
+    this.setState({
+      isChecked: event.target.checked,
+    })
+  }
+
+  loginSubmit = (event: any) => {
+    const { email, password, isChecked } = this.state
+    if (isChecked && email !== '') {
+      localStorage.username = email
+      localStorage.password = password
+      localStorage.checkbox = isChecked
     }
 
+    if (!Authenticate(email, password)) {
+      event.preventDefault()
+      const loginInvalid = document.querySelector('.Invalid-Login')
+      loginInvalid?.removeAttribute('hidden')
+    }
+  }
+
+  render() {
+    const { email, password, isChecked } = this.state
     return (
       <div className="Container-Login">
-        <form action="./../Random-Users" className="Form-Login">
-          
+        <form action="/Random-Users" className="Form-Login">
           <img src={Logo} alt="Logo" className="Logo-login" />
 
           <input
             type="text"
+            name="email"
             className="Input-Login"
             id="Input-User"
             placeholder="Nome de usuário"
-            autoComplete="nickname"
-            onChange={(e) => (user = e.target.value)}
+            defaultValue={email}
+            onChange={this.onChangeValue}
           />
 
           <input
             type="password"
+            name="password"
             className="Input-Login"
             id="Input-Password"
             placeholder="Senha"
-            autoComplete="off"
-            onChange={(e) => (password = e.target.value)}
+            defaultValue={password}
+            onChange={this.onChangeValue}
           />
 
           <p className="Invalid-Login" hidden>
@@ -45,38 +80,24 @@ export class Login extends Component {
           </p>
 
           <p className="Checkbox-Login">
-            <img
-              src={CheckboxNoCheck}
-              alt="Checkbox"
-              className="Checkbox"
-              onClick={check}
+            <input
+              type="checkbox"
+              id="checkbox"
+              checked={isChecked}
+              onChange={this.onChangeCheckbox}
             />
-            <img
-              src={CheckboxCheck}
-              alt="Checkbox"
-              className="Check"
-              onClick={check}
-              hidden
-            />
-            Lembrar de mim
+            <label>Lembrar de mim</label>
           </p>
 
           <input
             type="submit"
             className="Submit-Button-Login"
             value="Entrar"
-            onClick={(e) => {
-              if (!Authenticate(user, password)) {
-                e.preventDefault()
-                const loginInvalid = document.querySelector('.Invalid-Login')
-                loginInvalid?.removeAttribute('hidden')
-              }
-            }}
+            onClick={this.loginSubmit}
           />
         </form>
       </div>
     )
   }
 }
-
 export default Login

@@ -27,3 +27,9 @@
     cursor: pointer;
     background-color: #A9B01A;
 }
+
+@media(max-width: 533px) {
+    .Buttons-div {
+        justify-content: center;
+    }
+}

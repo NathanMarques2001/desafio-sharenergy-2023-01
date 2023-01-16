@@ -1,0 +1,47 @@
+.Confirm-Modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 140%;
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+.Form-Confirm-Modal {
+    background: #D6DF27;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    border-radius: 6px;
+    padding: 2%;
+    text-align: center;
+}
+
+.Label-Confirm-Modal {
+    padding: 1%;
+    padding-bottom: 5%;
+}
+
+.Button-Confirm-Modal {
+    padding: 3% 10% 3% 10%;
+    border: 1px #A8A8A8 solid;
+    font-weight: bold;
+}
+
+.Button-Confirm-Modal:hover {
+    background-color: #A8A8A8;
+    cursor: pointer;
+}
+
+.Div-Modal-Confirm {
+    display: flex;
+    height: auto;
+    width: 90%;
+    justify-content: space-around;
+}
